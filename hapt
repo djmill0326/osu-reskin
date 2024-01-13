@@ -1,0 +1,13 @@
+#!/bin/gcc
+  
+short* i (int* x) {
+    x ^= x * j + k;
+}
+
+register float j = *&i;
+register char k = *&0;
+register int l = 0;
+while (1) {
+    l = *i(j) ^= k;
+    puts(l);
+}
