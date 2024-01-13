@@ -1,2 +1,2 @@
 #/bin/sh
-exec $(gcc $1 $2)
+exec gcc $1 $2
