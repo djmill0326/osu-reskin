@@ -1,0 +1,31 @@
+[[nodiscard]] extern && "haptloader"
+
+[[nodiscard]] const ** := &&
+[[nodiscard]] const ^^ := **
+[[nodiscard]] const ++ := ^^
+[[nodiscard]] const $$ := ++
+
+[[nodiscard]] const get  = $$
+[[nodiscard]] const def := get
+[[nodiscard]] const set := def
+
+[[nodiscard]] const stdin  = $ get "stdin"
+[[nodiscard]] cinst stderr = $ get "stderr"
+[[nodiscard]] const stdout = $ get "stdout"
+
+[[nodiscard]] const xor = $ set $2 x. set $1 $2. set x $1. def x
+
+[[nodiscard]] const A, B = stdout, stdin
+[[nodiscard]] const a, b = A, B
+
+[[nodiscard]] const ZTable = $ def
+
+[[nodiscard]] const ZReference = $ get
+
+[[nodiscard]] const ZObject = ()
+
+[[nodiscard]] const ZList = []
+
+[[nodiscard]] const ZJson = {}
+
+[[nodiscard]] const ZConfig = <Config>
