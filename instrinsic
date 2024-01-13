@@ -1,0 +1,8 @@
+#!/bin/hapt
+$ .
+. map
+map .in .out
+in "stdin"
+out "stdout"
+mul in out
+send in out
